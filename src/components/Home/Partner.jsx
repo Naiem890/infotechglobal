@@ -17,10 +17,24 @@ const Partner = () => {
     <div className="container  my-10">
       <Swiper
         modules={[Autoplay]}
+        breakpoints={{
+          640: {
+            width: 640,
+            slidesPerView: 3,
+          },
+          768: {
+            width: 768,
+            slidesPerView: 4,
+          },
+          1024: {
+            width: 1024,
+            slidesPerView: 6,
+          },
+        }}
         spaceBetween={20}
-        slidesPerView={6}
+        slidesPerView={2}
         loop={true}
-        autoplay={{ delay: 5000 }}
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
