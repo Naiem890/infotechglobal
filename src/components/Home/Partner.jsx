@@ -14,7 +14,7 @@ import PartnerImg7 from "./../../assets/partner-7.png";
 
 const Partner = () => {
   return (
-    <div className="container  my-10">
+    <div className="container  mt-8 mb-16">
       <Swiper
         modules={[Autoplay]}
         breakpoints={{

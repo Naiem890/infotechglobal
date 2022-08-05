@@ -3,6 +3,7 @@ import AboutUsImage from "./../../assets/about1.png";
 import AboutUsPoint from "./AboutUsPoint";
 import AboutUsIcon1 from "./../../assets/about-us-icon-1.png";
 import AboutUsIcon2 from "./../../assets/about-us-icon-2.png";
+import Button from "../Shared/Button";
 
 const AboutUs = () => {
   const aboutUsPoints = [
@@ -38,9 +39,9 @@ const AboutUs = () => {
               <AboutUsPoint key={i} point={point} />
             ))}
           </div>
-          <button className="px-7 py-4 mt-8 rounded-sm uppercase font-poppins font-medium text-white transition-all bg-dark-blue  hover:bg-light-green">
+          <Button className="bg-dark-blue hover:bg-light-green mt-6 text-white">
             Know More
-          </button>
+          </Button>
         </div>
       </div>
     </div>
