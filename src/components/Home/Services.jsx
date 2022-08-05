@@ -28,8 +28,8 @@ const Services = () => {
     <div className="bg-light-gray">
       <div className="container pt-24 pb-16 ">
         {/* Service description content */}
-        <div className="flex gap-12 items-center mb-16">
-          <div className="flex-1 text-right">
+        <div className="flex md:flex-row flex-col gap-4 md:gap-12 items-center mb-16">
+          <div className="flex-1 md:text-right text-center">
             <div className="font-poppins font-medium mb-2">
               Infotech Global Limited India
             </div>
@@ -37,8 +37,8 @@ const Services = () => {
               Premium Services
             </h2>
           </div>
-          <div className="w-[2px] bg-slate-800 h-20"></div>
-          <div className="flex-1 text-gray-700">
+          <div className="w-[2px] bg-slate-800 h-0 md:h-20"></div>
+          <div className="flex-1 text-gray-700 md:text-left text-center">
             <p>
               Global organizations invest millions in complex enterprise level
               projects. In order to successfully complete the project within the

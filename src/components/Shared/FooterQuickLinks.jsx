@@ -26,7 +26,7 @@ const FooterQuickLinks = () => {
   return (
     <>
       <h3 className="mb-8 font-poppins font-bold text-2xl ">Quick Links</h3>
-      <ul className="list-[square] pl-6 md-pl-0">
+      <ul className="list-[square] pl-6 md:pl-0">
         {FooterLinks.map((link) => (
           <li className="underline underline-offset-4 text-lg mb-2 font-poppins font-medium cursor-pointer">
             <a href={link.link}>{link.linkText}</a>

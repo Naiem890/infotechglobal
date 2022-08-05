@@ -22,12 +22,12 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="bg-[url('https://iglind.com/assets/images/about-bg.jpg')] bg-top bg-cover">
+    <div className="md:bg-[url('https://iglind.com/assets/images/about-bg.jpg')] bg-light-blue bg-top bg-cover">
       <div className="container grid grid-cols-1 md:grid-cols-2">
-        <div className="self-end">
+        <div className="self-end md:mt-0 mt-16 -mx-[15px] md:-mx-0">
           <img src={AboutUsImage} alt="" />
         </div>
-        <div className="ml-16 my-16">
+        <div className="md:ml-4 lg:ml-16 my-16">
           <div className="mb-10">
             <h6 className="uppercase font-poppins mb-2">About us</h6>
             <h2 className="text-4xl font-poppins font-bold">
