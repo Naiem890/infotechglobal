@@ -7,7 +7,7 @@ import FeatureImg4 from "./../../assets/feature-4.png";
 
 const Features = () => {
   return (
-    <div className="container grid gap-x-4 gap-y-4 grid-cols-4 pt-24 pb-20">
+    <div className="container grid gap-x-4 gap-y-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-24 pb-20 px-6">
       <FeatureBlock img={FeatureImg1} title={"Solution Focused"} />
       <FeatureBlock img={FeatureImg2} title={"Customer Oriented"} />
       <FeatureBlock img={FeatureImg3} title={"99.99% Success"} />

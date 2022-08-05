@@ -7,9 +7,7 @@ const AboutUsPoint = ({ point }) => {
         <img className="w-20 h-20" src={point.icon} alt="" />
       </div>
       <div>
-        <h4 className="text-xl font-poppins mb-3 font-medium">
-          {point?.title}
-        </h4>
+        <h4 className="text-xl font-poppins mb-3 font-bold">{point?.title}</h4>
         <p>{point?.details}</p>
       </div>
     </div>

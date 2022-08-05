@@ -6,13 +6,14 @@ module.exports = {
       center: true,
       padding: {
         DEFAULT: "15px",
+        sm: "15px",
       },
     },
 
     screens: {
-      sm: "480px",
+      sm: "640px",
       md: "768px",
-      lg: "976px",
+      lg: "1024px",
       xl: "1200px",
     },
 
@@ -23,11 +24,13 @@ module.exports = {
     extend: {
       colors: {
         "light-blue": "#f1f6fc",
+        "light-gray": "#fbfbfb",
         "dark-blue": "#2f455d",
         "light-green": "#66c5af",
       },
       boxShadow: {
         1: "0px 1px 8px 3px rgb(0 0 0 / 3%)",
+        2: "0px 14px 30px rgb(0 0 0 / 7%)",
       },
     },
   },
