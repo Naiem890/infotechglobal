@@ -4,6 +4,8 @@ import HeroImg1 from "./../../assets/hero-1.jpg";
 import HeroImg2 from "./../../assets/hero-2.jpg";
 import { Navigation } from "swiper";
 import HeroCard from "./HeroCard";
+import { EffectFade } from "swiper";
+import "swiper/css/effect-fade";
 
 const Hero = () => {
   const heroCardContent = [
@@ -24,9 +26,10 @@ const Hero = () => {
   ];
 
   return (
-    <div className="">
+    <div className="duration-900">
       <Swiper
-        modules={[Navigation]}
+        effect="fade"
+        modules={[Navigation, EffectFade]}
         navigation={true}
         spaceBetween={0}
         loop={true}

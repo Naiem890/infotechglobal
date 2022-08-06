@@ -2,18 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+.swiper-button-prev {
+  margin-left: 32px;
+}
+.swiper-button-next {
+  margin-right: 32px;
+}
 .swiper-button-prev,
 .swiper-button-next {
   background: #f1f6fc;
   color: black !important;
-  height: 52px !important;
-  width: 52px !important;
+  height: 68px !important;
+  width: 68px !important;
   border-radius: 50%;
   padding: 20px !important;
+  transition: all 0.5s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #2f455d;
+  color: white !important;
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  font-size: 24px !important;
+  font-size: 20px !important;
   font-weight: bold;
+}
+
+@media (max-width: 640px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
 }
