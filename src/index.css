@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-button-prev,
+.swiper-button-next {
+  background: #f1f6fc;
+  color: black !important;
+  height: 52px !important;
+  width: 52px !important;
+  border-radius: 50%;
+  padding: 20px !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 24px !important;
+  font-weight: bold;
+}

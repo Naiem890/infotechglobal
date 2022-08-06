@@ -1,8 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
-import "swiper/css";
-import "swiper/css/autoplay";
 
 import PartnerImg1 from "./../../assets/partner-1.png";
 import PartnerImg2 from "./../../assets/partner-2.png";
