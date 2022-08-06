@@ -5,7 +5,7 @@ import ToolBar from "./ToolBar";
 const Header = () => {
   return (
     <>
-      {/* <ToolBar /> */}
+      <ToolBar />
       <NavBar />
     </>
   );
