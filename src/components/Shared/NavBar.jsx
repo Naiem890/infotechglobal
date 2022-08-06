@@ -23,8 +23,8 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="sticky top-0 bg-white">
-      <div class="navbar min-h-[90px] justify-between container">
+    <div className="sticky top-0 bg-white shadow-3 z-20">
+      <div class="navbar p-0 min-h-[80px] justify-between container">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -91,14 +91,14 @@ const NavBar = () => {
           <a href="/" class="flex-shrink-0">
             <img
               src={InfoTechLogo}
-              className="md:max-h-[90px] max-h-[72px]"
+              className="md:max-h-[80px] max-h-[72px]"
               alt=""
               srcset=""
             />
           </a>
 
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal p-0 ml-6">
+            <ul class="menu menu-horizontal p-0 ml-20">
               {Links.map((link, i) =>
                 link.isParent ? (
                   <li tabindex={i}>

@@ -33,6 +33,7 @@ module.exports = {
       boxShadow: {
         1: "0px 1px 8px 3px rgb(0 0 0 / 3%)",
         2: "0px 14px 30px rgb(0 0 0 / 7%)",
+        3: "0 0 20px -10px rgb(0 0 0 / 80%)",
       },
     },
   },
