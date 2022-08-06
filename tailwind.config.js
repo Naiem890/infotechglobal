@@ -27,6 +27,7 @@ module.exports = {
         "light-gray": "#fbfbfb",
         "dark-blue": "#2f455d",
         "light-green": "#66c5af",
+        green: "#00bcd4",
         dark: "#101010",
       },
       boxShadow: {
@@ -35,5 +36,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  daisyui: {
+    themes: false,
+  },
+  plugins: [require("daisyui")],
 };
