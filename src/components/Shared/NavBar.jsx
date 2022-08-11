@@ -2,6 +2,8 @@ import { LoginIcon } from "@heroicons/react/solid";
 import React from "react";
 import InfoTechLogo from "./../../assets/logo.png";
 
+import { Link } from "react-router-dom";
+
 const NavBar = () => {
   const Links = [
     { link: "/", linkText: "Home", isParent: false },
@@ -51,7 +53,10 @@ const NavBar = () => {
               {Links.map((link, i) =>
                 link.isParent ? (
                   <li tabindex={i}>
-                    <a href={link.link} class="justify-between">
+                    <Link
+                      to={link.link}
+                      class="justify-between font-poppins uppercase font-medium"
+                    >
                       {link.linkText}
                       <svg
                         class="fill-current"
@@ -62,49 +67,49 @@ const NavBar = () => {
                       >
                         <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                       </svg>
-                    </a>
+                    </Link>
                     <ul class="p-2 bg-dark-blue text-white">
                       {link.childLinks.map((clink) => (
                         <li>
-                          <a
-                            href={clink.link}
+                          <Link
+                            to={clink.link}
                             className="font-poppins uppercase font-medium"
                           >
                             {clink.linkText}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
                   </li>
                 ) : (
                   <li>
-                    <a
-                      href={link.link}
+                    <Link
+                      to={link.link}
                       className="font-poppins uppercase font-medium"
                     >
                       {link.linkText}
-                    </a>
+                    </Link>
                   </li>
                 )
               )}
             </ul>
           </div>
-          <a href="/" class="flex-shrink-0">
+          <Link to="/" class="flex-shrink-0">
             <img
               src={InfoTechLogo}
               className="md:max-h-[80px] max-h-[72px]"
               alt=""
               srcset=""
             />
-          </a>
+          </Link>
 
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal p-0 ml-20">
               {Links.map((link, i) =>
                 link.isParent ? (
                   <li tabindex={i}>
-                    <a
-                      href={link.link}
+                    <Link
+                      to={link.link}
                       className="font-poppins uppercase font-medium transition-all"
                     >
                       {link.linkText}
@@ -117,28 +122,28 @@ const NavBar = () => {
                       >
                         <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                       </svg>
-                    </a>
+                    </Link>
                     <ul class="p-2 bg-dark-blue text-white transition-all">
                       {link.childLinks.map((clink) => (
                         <li>
-                          <a
-                            href={clink.link}
+                          <Link
+                            to={clink.link}
                             className="font-poppins uppercase font-medium"
                           >
                             {clink.linkText}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
                   </li>
                 ) : (
                   <li>
-                    <a
-                      href={link.link}
+                    <Link
+                      to={link.link}
                       className="font-poppins uppercase font-medium"
                     >
                       {link.linkText}
-                    </a>
+                    </Link>
                   </li>
                 )
               )}
@@ -146,13 +151,13 @@ const NavBar = () => {
           </div>
         </div>
 
-        <a
-          href="/"
+        <Link
+          to="/"
           class="uppercase font-poppins font-bold text-green hidden md:flex items-center"
         >
           <LoginIcon className="h-6 w-6" />
           Login
-        </a>
+        </Link>
       </div>
     </div>
   );
