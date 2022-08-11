@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+.service-details-nav a.active {
+  background-color: #2f455d;
+  color: #f1f6fc;
+}
+
 .swiper-button-prev {
   margin-left: 32px;
 }

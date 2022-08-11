@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 
 const ServiceCard = ({ service }) => {
   console.log(service);
@@ -13,7 +14,9 @@ const ServiceCard = ({ service }) => {
       </div>
       <div>
         <h3 className="font-poppins text-2xl font-bold text-center mb-2">
-          <a href={`/${service.serviceLink}`}>{service.serviceName}</a>
+          <HashLink to={`/service-details/${service.serviceLink}/#`}>
+            {service.serviceName}
+          </HashLink>
         </h3>
       </div>
     </div>

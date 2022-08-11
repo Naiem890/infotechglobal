@@ -14,11 +14,26 @@ const NavBar = () => {
       linkText: "Services",
       isParent: true,
       childLinks: [
-        { link: "/", linkText: "Application Development" },
-        { link: "/", linkText: "It professional Services" },
-        { link: "/", linkText: "Quality Assurance Services" },
-        { link: "/", linkText: "Business Intelligence & Report" },
-        { link: "/", linkText: "Mobility SOlutions & Services" },
+        {
+          link: "/service-details/application-development",
+          linkText: "Application Development",
+        },
+        {
+          link: "/service-details/it-professional",
+          linkText: "It professional Services",
+        },
+        {
+          link: "/service-details/qa-services",
+          linkText: "Quality Assurance Services",
+        },
+        {
+          link: "/service-details/bi-reporting",
+          linkText: "Business Intelligence & Report",
+        },
+        {
+          link: "/service-details/ms-services",
+          linkText: "Mobility Solutions & Services",
+        },
       ],
     },
     { link: "/career", linkText: "Career", isParent: false },
