@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import { Routes, Route } from "react-router-dom";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Footer from "./components/Shared/Footer";
+import Career from "./components/Career/Career";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/career" element={<Career />} />
       </Routes>
       <Footer />
     </div>

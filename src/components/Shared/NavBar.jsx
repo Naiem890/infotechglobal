@@ -21,7 +21,7 @@ const NavBar = () => {
         { link: "/", linkText: "Mobility SOlutions & Services" },
       ],
     },
-    { link: "/", linkText: "Career", isParent: false },
+    { link: "/career", linkText: "Career", isParent: false },
     { link: "/", linkText: "Contact US", isParent: false },
   ];
 
