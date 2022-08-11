@@ -8,6 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Footer from "./components/Shared/Footer";
 import Career from "./components/Career/Career";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/career" element={<Career />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
       <Footer />
     </div>

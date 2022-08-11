@@ -22,7 +22,7 @@ const NavBar = () => {
       ],
     },
     { link: "/career", linkText: "Career", isParent: false },
-    { link: "/", linkText: "Contact US", isParent: false },
+    { link: "/contact-us", linkText: "Contact US", isParent: false },
   ];
 
   return (
