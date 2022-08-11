@@ -5,7 +5,7 @@ import AboutUsIcon1 from "./../../assets/about-us-icon-1.png";
 import AboutUsIcon2 from "./../../assets/about-us-icon-2.png";
 import Button from "../Shared/Button";
 
-const AboutUs = () => {
+const AboutUsSection = () => {
   const aboutUsPoints = [
     {
       icon: AboutUsIcon1,
@@ -48,4 +48,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutUsSection;

@@ -5,9 +5,11 @@ import InfoTechLogo from "./../../assets/logo.png";
 const NavBar = () => {
   const Links = [
     { link: "/", linkText: "Home", isParent: false },
+    { link: "/about-us", linkText: "About Us", isParent: false },
+
     {
       link: "/",
-      linkText: "About Us",
+      linkText: "Services",
       isParent: true,
       childLinks: [
         { link: "/", linkText: "Application Development" },
@@ -17,7 +19,6 @@ const NavBar = () => {
         { link: "/", linkText: "Mobility SOlutions & Services" },
       ],
     },
-    { link: "/", linkText: "About Us", isParent: false },
     { link: "/", linkText: "Career", isParent: false },
     { link: "/", linkText: "Contact US", isParent: false },
   ];
