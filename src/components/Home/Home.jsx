@@ -3,7 +3,7 @@ import AboutUsSection from "./AboutUsSection";
 import Features from "./Features";
 import Hero from "./Hero";
 import Partner from "./Partner";
-import Services from "./Services";
+import ServicesSection from "./ServicesSection";
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
       <Hero />
       <Features />
       <AboutUsSection />
-      <Services />
+      <ServicesSection serviceCount={3} />
       <Partner />
     </div>
   );

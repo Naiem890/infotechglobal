@@ -1,29 +1,8 @@
 import React from "react";
 import ServiceCard from "./ServiceCard";
+import ServicesList from "../../data/serviceslist";
 
-import ServiceImg1 from "./../../assets/service-1.jpg";
-import ServiceImg2 from "./../../assets/service-2.jpg";
-import ServiceImg3 from "./../../assets/service-3.jpg";
-
-const Services = () => {
-  const Services = [
-    {
-      image: ServiceImg1,
-      serviceName: "Quality Asuurance & Services",
-      serviceLink: "qa-services",
-    },
-    {
-      image: ServiceImg2,
-      serviceName: "Business Intelligence & Reporting",
-      serviceLink: "bi-reporting",
-    },
-    {
-      image: ServiceImg3,
-      serviceName: "Mobility Solutions & Services",
-      serviceLink: "ms-services",
-    },
-  ];
-
+const ServicesSection = ({ serviceCount = ServicesList.length }) => {
   return (
     <div className="bg-light-gray">
       <div className="container pt-24 pb-16 ">
@@ -38,7 +17,7 @@ const Services = () => {
             </h2>
           </div>
           <div className="w-[2px] bg-slate-800 h-0 md:h-20"></div>
-          <div className="flex-1 text-gray-700 md:text-left text-center">
+          <div className="flex-1 text-gray-700 md:text-left text-center md:pr-12">
             <p>
               Global organizations invest millions in complex enterprise level
               projects. In order to successfully complete the project within the
@@ -49,8 +28,8 @@ const Services = () => {
         </div>
 
         {/* Service Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {Services.map((service, i) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-7 items-start">
+          {ServicesList.slice(0, serviceCount).map((service, i) => (
             <ServiceCard key={i} service={service} />
           ))}
         </div>
@@ -59,4 +38,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default ServicesSection;

@@ -3,7 +3,7 @@ import React from "react";
 const ServiceCard = ({ service }) => {
   console.log(service);
   return (
-    <div className="px-4 pt-4 pb-7 mb-7 shadow-2 ">
+    <div className="px-4 pt-4 pb-7  shadow-2 ">
       <div className="mb-5 overflow-hidden">
         <img
           src={service.image}

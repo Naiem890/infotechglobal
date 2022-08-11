@@ -10,7 +10,7 @@ const NavBar = () => {
     { link: "/about-us", linkText: "About Us", isParent: false },
 
     {
-      link: "/",
+      link: "/services",
       linkText: "Services",
       isParent: true,
       childLinks: [
