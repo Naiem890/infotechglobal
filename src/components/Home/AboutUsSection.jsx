@@ -29,7 +29,9 @@ const AboutUsSection = () => {
         </div>
         <div className="md:ml-4 lg:ml-16 my-16">
           <div className="mb-10">
-            <h6 className="uppercase font-poppins mb-2">About us</h6>
+            <h6 className="uppercase font-medium font-poppins mb-2">
+              About us
+            </h6>
             <h2 className="text-4xl font-poppins font-bold">
               Welcome to Infotech Global Limited India. (IGLIND)
             </h2>
