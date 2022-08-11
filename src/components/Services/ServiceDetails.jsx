@@ -5,6 +5,7 @@ import Banner from "../Shared/Banner";
 import ServiceDetailsImg from "./../../assets/service-details-banner.jpg";
 import ServicesList from "../../data/serviceslist";
 import { ChevronRightIcon } from "@heroicons/react/outline";
+import CTABlock from "../Shared/CTABlock";
 
 const ServiceDetails = () => {
   const location = useLocation();
@@ -38,6 +39,9 @@ const ServiceDetails = () => {
                   <ChevronRightIcon className="h-6 w-6" />
                 </NavLink>
               ))}
+            </div>
+            <div className="my-12">
+              <CTABlock />
             </div>
           </div>
         </div>
