@@ -3,7 +3,7 @@ import TLi from "../Shared/TLi";
 
 const QAService = () => {
   return (
-    <div className="mt-10">
+    <div>
       <h2 className="text-4xl font-poppins font-bold mb-7">
         Quality Asuurance & Services
       </h2>
