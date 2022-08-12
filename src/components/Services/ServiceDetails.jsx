@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import Banner from "../Shared/Banner";
 import ServiceDetailsImg from "./../../assets/service-details-banner.jpg";
 import ServicesList from "../../data/serviceslist";
 import { ChevronRightIcon } from "@heroicons/react/outline";
 import CTABlock from "../Shared/CTABlock";
+import { NavHashLink } from "react-router-hash-link";
 
 const ServiceDetails = () => {
   const location = useLocation();
@@ -31,13 +32,13 @@ const ServiceDetails = () => {
           <div className="md:col-span-1">
             <div className="service-details-nav">
               {ServicesList.map((service) => (
-                <NavLink
-                  to={service.serviceLink}
+                <NavHashLink
+                  to={`${service.serviceLink}/#`}
                   className="font-bold p-4 border-2 border-gray-200 rounded-lg flex justify-between w-full mt-3 hover:text-white transition-all duration-900 hover:bg-dark-blue"
                 >
                   {service.serviceName}
                   <ChevronRightIcon className="h-6 w-6" />
-                </NavLink>
+                </NavHashLink>
               ))}
             </div>
             <div className="my-12">

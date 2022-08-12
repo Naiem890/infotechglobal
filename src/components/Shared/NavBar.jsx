@@ -3,6 +3,7 @@ import React from "react";
 import InfoTechLogo from "./../../assets/logo.png";
 
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const NavBar = () => {
   const Links = [
@@ -86,12 +87,12 @@ const NavBar = () => {
                     <ul class="p-2 bg-dark-blue text-white">
                       {link.childLinks.map((clink) => (
                         <li>
-                          <Link
-                            to={clink.link}
+                          <HashLink
+                            to={`${clink.link}/#`}
                             className="font-poppins uppercase font-medium"
                           >
                             {clink.linkText}
-                          </Link>
+                          </HashLink>
                         </li>
                       ))}
                     </ul>
@@ -141,12 +142,12 @@ const NavBar = () => {
                     <ul class="p-2 bg-dark-blue text-white transition-all">
                       {link.childLinks.map((clink) => (
                         <li>
-                          <Link
-                            to={clink.link}
+                          <HashLink
+                            to={`${clink.link}/#`}
                             className="font-poppins uppercase font-medium"
                           >
                             {clink.linkText}
-                          </Link>
+                          </HashLink>
                         </li>
                       ))}
                     </ul>
