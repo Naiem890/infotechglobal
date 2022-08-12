@@ -27,7 +27,7 @@ const ServiceDetails = () => {
       <div className="container my-24">
         <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2">
-            <div className="mt-10">
+            <div className="md:mt-10">
               <Outlet />
             </div>
           </div>
